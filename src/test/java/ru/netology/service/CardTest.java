@@ -17,7 +17,6 @@ public class CardTest {
         open("http://localhost:9999");
     }
 
-
     @Test
     @DisplayName("Should successful plan and replan meeting")
     void shouldSuccessfulPlanAndReplanMeeting() {  // отправлена заявка успешно и переотправлена повторно
