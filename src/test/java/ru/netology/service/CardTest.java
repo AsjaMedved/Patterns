@@ -18,8 +18,8 @@ public class CardTest {
     }
 
     @Test
-    @DisplayName("Should successful plan and replan meeting")
-    void shouldSuccessfulPlanAndReplanMeeting() {  // отправлена заявка успешно и переотправлена повторно
+    @DisplayName("отправлена заявка успешно и переотправлена повторно")
+    void shouldSuccessfulPlanAndReplanMeeting() {
         var validUser = DataGenerator.Registration.generateUser("ru");
         var daysToAddForFirstMeeting = 4;
         var firstMeetingDate = DataGenerator.generateDate(daysToAddForFirstMeeting);
@@ -43,8 +43,8 @@ public class CardTest {
     }
 
     @Test
-    @DisplayName("the City Field Is Not Filled In")
-    void theCityFieldIsNotFilledIn() { // не заполнен город
+    @DisplayName("не заполнен город")
+    void theCityFieldIsNotFilledIn() {
         var validUser = DataGenerator.Registration.generateUser("ru");
         var daysToAddForFirstMeeting = 4;
         var firstMeetingDate = DataGenerator.generateDate(daysToAddForFirstMeeting);
@@ -59,8 +59,8 @@ public class CardTest {
     }
 
     @Test
-    @DisplayName("the Data Field Is Not Filled In")
-    void theDataFieldIsNotFilledIn() { // не заполнено поле дата
+    @DisplayName("не заполнено поле дата")
+    void theDataFieldIsNotFilledIn() {
         var validUser = DataGenerator.Registration.generateUser("ru");
 
         $("[data-test-id='city'] input").setValue(validUser.getCity());
@@ -73,8 +73,8 @@ public class CardTest {
     }
 
     @Test
-    @DisplayName("the Name Field Is Not Filled In")
-    void theNameFieldIsNotFilledIn() { // не заполнено поле имя
+    @DisplayName("не заполнено поле имя")
+    void theNameFieldIsNotFilledIn() {
         var validUser = DataGenerator.Registration.generateUser("ru");
         var daysToAddForFirstMeeting = 4;
         var firstMeetingDate = DataGenerator.generateDate(daysToAddForFirstMeeting);
@@ -89,8 +89,8 @@ public class CardTest {
     }
 
     @Test
-    @DisplayName("the Pnone Field Is Not Filled In")
-    void thePnoneFieldIsNotFilledIn() { // не заполнено поле телефон
+    @DisplayName("не заполнено поле телефон")
+    void thePnoneFieldIsNotFilledIn() {
         var validUser = DataGenerator.Registration.generateUser("ru");
         var daysToAddForFirstMeeting = 4;
         var firstMeetingDate = DataGenerator.generateDate(daysToAddForFirstMeeting);
@@ -105,8 +105,8 @@ public class CardTest {
     }
 
     @Test
-    @DisplayName("the Check Box Is Not Marked")
-    void theCheckBoxIsNotMarked() { //  не отмечен чек бокс
+    @DisplayName("не отмечен чек бокс")
+    void theCheckBoxIsNotMarked() {
         var validUser = DataGenerator.Registration.generateUser("ru");
         var daysToAddForFirstMeeting = 4;
         var firstMeetingDate = DataGenerator.generateDate(daysToAddForFirstMeeting);
@@ -121,8 +121,8 @@ public class CardTest {
     }
 
     @Test
-    @DisplayName("Invalid City")
-    void InvalidCity() { //  не валидный город
+    @DisplayName("не валидный город")
+    void InvalidCity() {
         var validUser = DataGenerator.Registration.generateUser("ru");
         var daysToAddForFirstMeeting = 4;
         var firstMeetingDate = DataGenerator.generateDate(daysToAddForFirstMeeting);
@@ -138,8 +138,8 @@ public class CardTest {
     }
 
     @Test
-    @DisplayName("invalid Date")
-    void invalidDate() { //  не валидная дата 99.99.9999
+    @DisplayName("не валидная дата 99.99.9999")
+    void invalidDate() {
         var validUser = DataGenerator.Registration.generateUser("ru");
         var daysToAddForFirstMeeting = 4;
         var firstMeetingDate = DataGenerator.generateDate(daysToAddForFirstMeeting);
@@ -155,8 +155,8 @@ public class CardTest {
     }
 
     @Test
-    @DisplayName("invalid Name")
-    void invalidName() { //  не валидное имя
+    @DisplayName("не валидное имя")
+    void invalidName() {
         var validUser = DataGenerator.Registration.generateUser("ru");
         var daysToAddForFirstMeeting = 4;
         var firstMeetingDate = DataGenerator.generateDate(daysToAddForFirstMeeting);
@@ -172,8 +172,8 @@ public class CardTest {
     }
 
     @Test
-    @DisplayName("invalid Data")
-    void invalidData() { // не заполнено поле дата 01.05.2025
+    @DisplayName("не заполнено поле дата 01.05.2025")
+    void invalidData() {
         var validUser = DataGenerator.Registration.generateUser("ru");
 
         $("[data-test-id='city'] input").setValue(validUser.getCity());
