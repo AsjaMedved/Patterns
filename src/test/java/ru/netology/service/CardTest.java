@@ -43,7 +43,7 @@ public class CardTest {
     }
 
     @Test
-    @DisplayName("Should successful plan and replan meeting")
+    @DisplayName("the City Field Is Not Filled In")
     void theCityFieldIsNotFilledIn() { // не заполнен город
         var validUser = DataGenerator.Registration.generateUser("ru");
         var daysToAddForFirstMeeting = 4;
@@ -59,7 +59,7 @@ public class CardTest {
     }
 
     @Test
-    @DisplayName("Should successful plan and replan meeting")
+    @DisplayName("the Data Field Is Not Filled In")
     void theDataFieldIsNotFilledIn() { // не заполнено поле дата
         var validUser = DataGenerator.Registration.generateUser("ru");
 
@@ -73,7 +73,7 @@ public class CardTest {
     }
 
     @Test
-    @DisplayName("Should successful plan and replan meeting")
+    @DisplayName("the Name Field Is Not Filled In")
     void theNameFieldIsNotFilledIn() { // не заполнено поле имя
         var validUser = DataGenerator.Registration.generateUser("ru");
         var daysToAddForFirstMeeting = 4;
@@ -89,7 +89,7 @@ public class CardTest {
     }
 
     @Test
-    @DisplayName("Should successful plan and replan meeting")
+    @DisplayName("the Pnone Field Is Not Filled In")
     void thePnoneFieldIsNotFilledIn() { // не заполнено поле телефон
         var validUser = DataGenerator.Registration.generateUser("ru");
         var daysToAddForFirstMeeting = 4;
@@ -105,7 +105,7 @@ public class CardTest {
     }
 
     @Test
-    @DisplayName("Should successful plan and replan meeting")
+    @DisplayName("the Check Box Is Not Marked")
     void theCheckBoxIsNotMarked() { //  не отмечен чек бокс
         var validUser = DataGenerator.Registration.generateUser("ru");
         var daysToAddForFirstMeeting = 4;
@@ -121,8 +121,8 @@ public class CardTest {
     }
 
     @Test
-    @DisplayName("Should successful plan and replan meeting")
-    void anInvalidCity() { //  не валидный город
+    @DisplayName("Invalid City")
+    void InvalidCity() { //  не валидный город
         var validUser = DataGenerator.Registration.generateUser("ru");
         var daysToAddForFirstMeeting = 4;
         var firstMeetingDate = DataGenerator.generateDate(daysToAddForFirstMeeting);
@@ -138,7 +138,7 @@ public class CardTest {
     }
 
     @Test
-    @DisplayName("Should successful plan and replan meeting")
+    @DisplayName("invalid Date")
     void invalidDate() { //  не валидная дата 99.99.9999
         var validUser = DataGenerator.Registration.generateUser("ru");
         var daysToAddForFirstMeeting = 4;
@@ -155,7 +155,7 @@ public class CardTest {
     }
 
     @Test
-    @DisplayName("Should successful plan and replan meeting")
+    @DisplayName("invalid Name")
     void invalidName() { //  не валидное имя
         var validUser = DataGenerator.Registration.generateUser("ru");
         var daysToAddForFirstMeeting = 4;
@@ -172,7 +172,7 @@ public class CardTest {
     }
 
     @Test
-    @DisplayName("Should successful plan and replan meeting")
+    @DisplayName("invalid Data")
     void invalidData() { // не заполнено поле дата 01.05.2025
         var validUser = DataGenerator.Registration.generateUser("ru");
 
